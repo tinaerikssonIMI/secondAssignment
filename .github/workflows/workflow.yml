@@ -9,12 +9,11 @@ on:
       - main
 
 jobs:
-  test:
+  cypress-run:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -24,5 +23,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
