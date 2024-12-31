@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const UserManager = require('./models/UserManager');
-const {sequelize} = require('./models/user');
+const {sequelize} = require('./models/User');
 const { uuid } = require('uuidv4');
 
 const app = express();
