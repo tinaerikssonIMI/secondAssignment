@@ -20,7 +20,6 @@ const userSessions = {};
 async function authenticatedUser(req, res, next) { 
     const sessionID = req.headers['x-session-id'];
 
-    console.log('SessionID:', sessionID);
     if (!sessionID || !userSessions[sessionID]) {
         return res.status(401).json({ success: false, message: 'Du är inte inloggad.' });
     }

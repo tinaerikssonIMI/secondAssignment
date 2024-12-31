@@ -7,8 +7,9 @@
     "test": "tests"
   },
   "scripts": {
-      "cypress:open": "cypress open",
-      "cypress:run": "cypress run"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {
-    "cypress": "^13.17.0"
+    "cypress": "^13.17.0",
+    "jest": "^29.7.0"
   }
 }
